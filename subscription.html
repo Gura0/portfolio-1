@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>portfolio</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+<link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div class="globalHeader">
+  <div class="headerContent">
+    <div class="logo"><a href="index.html"><img src="images/logo-1.png" alt="ロゴ画像"></a></div>
+  
+  <div class="wrapper">
+              <ul class="menu" id="menu">
+                <li><i class="fa-solid fa-user"></i>
+                  会員登録</li>
+                <li><i class="fa-solid fa-lock"></i>
+                  ログイン</li>
+                <li><i class="fa-solid fa-cart-shopping"></i>
+                  カート</li>
+              </ul>
+            </div>
+		
+	  </div>
+  <nav class="globalNavigation">
+    <ul>
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="product.html">商品一覧</a></li>
+      <li class="current"><a href="subscription.html">定期購入プラン</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+	</div>
+	
+  
+<main>
+	<div id="topicpath">
+	<ol>
+		<li><a href="index.html">ホーム</a>&gt;</li>
+		<li>商品一覧</li>
+	</ol>
+</div>
+  <table>
+	  <caption>全国の選りすぐりの花屋さんからあなたの自宅へお届け！<br>ギフトにも対応しています。</caption>
+	  <tr>
+		  <th>プラン名</th>
+		  <th>お届け期間</th>
+		  <th>料金/月（送料込み）</th>
+	  </tr>
+	  <tr>
+	  <td rowspan="2">5本プラン</td>
+	  <td>4週間に一回お届け</td>
+	　<td>1000円</td>
+	  </tr>
+	  <tr>
+	  <td>2週間に一回お届け</td>
+	　<td>1800円</td>
+	  </tr>
+	  <tr>
+	  <td rowspan="2">15本プラン</td>
+	  <td>4週間に一回お届け</td>
+	　<td>2000円</td>
+	  </tr>
+	  <tr>
+	  <td>2週間に一回お届け</td>
+	　<td>3600円</td>
+	  </tr>
+	  <tr>
+	  <td rowspan="2">30本プラン</td>
+	  <td>4週間に一回お届け</td>
+	　<td>3000円</td>
+	  </tr>
+	  <tr>
+	  <td>2週間に一回お届け</td>
+	　<td>5400円</td>
+	  </tr>
+  </table>
+</main>
+<footer>
+  <div class="siteLinks">
+    <div class="inner">
+      <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="ロゴ画像"></a></div>
+      <div class="linkList">
+        <dl>
+          <dt><a href="index.html">ホーム</a></dt>
+			<dd><a href="index.html">季節の花</a></dd><br>
+          <dd><a href="index.html">ニュース</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="product.html">商品一覧</a></dt>
+          <dd><a href="product.html">花束</a></dd><br>
+          <dd><a href="product.html">鉢植え</a></dd><br>
+			<dd><a href="product.html">プリザーブドフラワー</a></dd>
+                  </dl>
+        <dl>
+          <dt><a href="subscription.html">定期購入プラン</a></dt>
+          <dd><a href="subscription.html">5本プラン</a></dd><br>
+          <dd><a href="subscription.html">10本プラン</a></dd><br>
+			<dd><a href="subscription.html">15本プラン</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="contact.html">お問い合わせ</a></dt>
+            </dl>
+      </div>
+    </div>
+  </div>
+  <p><small class="copyright"> Copyright ＠ HANAYA.com All Rights Reserved.</small></p>
+</footer>
+<a href="#" id="gototop" class="gototop" data-scroll>^</a> 
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script> 
+<script type="text/javascript" src="js/slick/slick.min.js"></script> 
+<script type="text/javascript" src="js/smooth-scroll.js"></script> 
+<script>
+    $(function() {
+      $('.imageScroll').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+      });
+
+      smoothScroll.init();
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+          $('#gototop').fadeIn('slow');
+        } else {
+          $('#gototop').fadeOut('slow');
+        }
+      });
+    });
+	
+  /*$(window).on('scroll', function(){
+    if($(this).scrollTop() > 50){
+      $('.globalHeader').addClass('fixed');
+    } else {
+      $('.globalHeader').removeClass('fixed');
+    }
+  }*/
+
+  </script>
+</body>
+</html>

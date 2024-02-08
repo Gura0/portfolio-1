@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>portfolio</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="js/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+<link href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div class="globalHeader">
+  <div class="headerContent">
+    <div class="logo"><a href="index.html"><img src="images/logo-1.png" alt="ロゴ画像"></a></div>
+  
+  <div class="wrapper">
+              <ul class="menu" id="menu">
+                <li><i class="fa-solid fa-user"></i>
+                  会員登録</li>
+                <li><i class="fa-solid fa-lock"></i>
+                  ログイン</li>
+                <li><i class="fa-solid fa-cart-shopping"></i>
+                  カート</li>
+              </ul>
+            </div>
+		
+	  </div>
+  <nav class="globalNavigation">
+    <ul>
+      <li><a href="index.html">ホーム</a></li>
+      <li class="current"><a href="product.html">商品一覧</a></li>
+      <li><a href="subscription.html">定期購入プラン</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+	</div>
+	  </header>
+<main>
+  <div id="topicpath">
+	<ol>
+		<li><a href="index.html">ホーム</a>&gt;</li>
+		<li>商品一覧</li>
+	</ol>
+</div>
+	<ul class="product">
+		<li>
+			<h1 id="product1">花束</h1>
+			<figure>
+		<img src="images/product-1.png" alt="商品写真バラ" width="250px" height="180px">
+		<figcaption>愛知県から取り寄せた本場の薔薇です。長持ちしやすく、贈り物に適しています。</figcaption>
+		<p>販売価格 4,500円(税込み 4,950円)</p>
+		<input type="button" name="cart" class="cart" value="カートに入れる">
+		</figure>
+		</li>
+		<li class="product2">
+			<h1 id="product2">鉢植え</h1>
+			<figure>
+		<img src="images/product-2.png" alt="商品写真紫陽花" width="250px" height="180px">
+		<figcaption>愛知県田原市から取り寄せた人気の紫陽花です。色鮮やかで豊富な種類と色があります。</figcaption>
+		<p>販売価格 4,000円(税込み 4,400円)</p>
+		<input type="button" name="cart" class="cart" value="カートに入れる">
+		</figure>
+		</li>
+		<li class="product2">
+			<h1 id="product3">プリザーブドフラワー</h1>
+			<figure>
+		<img src="images/product-3.png" alt="商品写真バラ" width="250px" height="180px">
+		<figcaption>生花の一番美しい時期に色素を抜き取り、特殊な加工を施した商品です。保存状態が良ければ５年ほど持ちます。</figcaption>
+		<p>販売価格 4,500円(税込み 4,950円)</p>
+		<input type="button" name="cart" class="cart" value="カートに入れる">
+		</figure>
+		</li>
+		
+		
+	</ul>
+</main>
+<footer>
+  <div class="siteLinks">
+    <div class="inner">
+      <div class="logo"><a href="index.html"><img src="images/logo-2.png" alt="ロゴ画像"></a></div>
+      <div class="linkList">
+        <dl>
+          <dt><a href="index.html">ホーム</a></dt>
+			<dd><a href="index.html">季節の花</a></dd><br>
+          <dd><a href="index.html">ニュース</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="product.html">商品一覧</a></dt>
+          <dd><a href="product.html">花束</a></dd><br>
+          <dd><a href="product.html">鉢植え</a></dd><br>
+			<dd><a href="product.html">プリザーブドフラワー</a></dd>
+                  </dl>
+        <dl>
+          <dt><a href="subscription.html">定期購入プラン</a></dt>
+          <dd><a href="subscription.html">5本プラン</a></dd><br>
+          <dd><a href="subscription.html">10本プラン</a></dd><br>
+			<dd><a href="subscription.html">15本プラン</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="contact.html">お問い合わせ</a></dt>
+            </dl>
+      </div>
+    </div>
+  </div>
+  <p><small class="copyright"> Copyright ＠ HANAYA.com All Rights Reserved.</small></p>
+</footer>
+<a href="#" id="gototop" class="gototop" data-scroll>^</a> 
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script> 
+<script type="text/javascript" src="js/slick/slick.min.js"></script> 
+<script type="text/javascript" src="js/smooth-scroll.js"></script> 
+<script>
+    $(function() {
+      $('.imageScroll').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+      });
+
+      smoothScroll.init();
+
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 200) {
+          $('#gototop').fadeIn('slow');
+        } else {
+          $('#gototop').fadeOut('slow');
+        }
+      });
+    });
+	
+  /*$(window).on('scroll', function(){
+    if($(this).scrollTop() > 50){
+      $('.globalHeader').addClass('fixed');
+    } else {
+      $('.globalHeader').removeClass('fixed');
+    }
+  }*/
+
+  </script>
+</body>
+</html>
