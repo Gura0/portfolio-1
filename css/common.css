@@ -77,14 +77,16 @@ header .headerContent .logo img {
 }
 .wrapper{
 	margin: 0 auto;
-	width: 80%;
+	width: 100%;
+	padding-right: 30px;
 }
 .menu li{
-float: left;
+
 margin: 20px auto;
+font-size: 2.5vw;
 }
 .fa-solid{
-	font-size: 15px;
+	font-size: 20px;
 	margin-left: 50px;
 	color: #ae9e9e;
 }
@@ -102,6 +104,7 @@ margin: 20px auto;
 float: left;
 margin: 10px auto;
 text-align: center;
+font-size: 15px;
 }
 	.fa-solid{
 	font-size: 30px;
@@ -127,7 +130,7 @@ header nav.globalNavigation ul {
 header nav.globalNavigation ul li {
   border-left: 1px solid #e2e2e2;
   float: left;
-  font-size: 10px;
+  font-size: 2vw;
   width: 25%;
 }
 
@@ -148,6 +151,7 @@ header nav.globalNavigation ul li a {
   header nav.globalNavigation ul li a {
     padding: 10px 30px;
 	    transition: 500ms;
+	  font-size: 15px;
   }
 }
 
@@ -448,6 +452,11 @@ table caption{
 	margin: 50px;
 	font-size: 30px;
 	text-align: center;
+}
+@media (max-width: 768px) {
+	table caption{
+	font-size: 5vw;
+	}
 }
 table th,td{
 	border: 1px solid #000;
